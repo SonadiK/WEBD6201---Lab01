@@ -24,6 +24,28 @@
     Links[1].innerHTML = "<i class ='fa-solid fa-table-cells-large'> </i> Projects";
 
     /**
+     * Add another link to Navbar between About Us link and Contact Us link.
+     */ 
+    // create an element(s) to insert
+    let HRList = document.createElement("li");
+    let HRLink = document.createElement("a");
+    let HRIcon = document.createElement("i");
+
+    // configure the new element
+    HRLink.setAttribute("class", "nav-link");
+    HRIcon.setAttribute("class", "fa-solid fa-address-card");
+    let HRNode = document.createTextNode(" Human Resources");
+    HRLink.setAttribute("href", "#");
+
+    // Add / Insert the new element
+    HRLink.appendChild(HRIcon);
+    HRLink.appendChild(HRNode);
+    HRList.appendChild(HRLink)
+    //get an entry point(s) reference
+    let list = document.getElementById("myList");
+    list.insertBefore(HRList, list.childNodes[8]);
+
+    /**
      * Function to display the content in home page.
      */
     function DisplayHomePage()
