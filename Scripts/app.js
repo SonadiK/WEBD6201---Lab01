@@ -11,7 +11,7 @@
  */
 
 /** 
- * Main function 
+ * Main function for app.js page
  */
 (function()
 {
@@ -50,8 +50,6 @@
     */
     function DisplayHomePage()
     {
-        console.log("Home Page");
-
         //get an entry point(s) reference 
         let MainContent = document.getElementsByTagName("main")[0];
     
@@ -83,7 +81,6 @@
     */
     function DisplayProductsPage()
     {
-        console.log("Products Page");
         //get an entry point(s) reference 
         let MainContent = document.getElementsByTagName("main")[0];
 
@@ -145,7 +142,6 @@
     function DisplayServicesPage()
     {
         // Step1: Get an entry point
-        console.log("Services Page");
         let MainContent = document.getElementsByTagName("main")[0];
         let DocumentBody = document.body;
     
@@ -185,11 +181,11 @@
         MainParagraph3.textContent = ("Database Development helps to assign data in a good way and organized.");
 
         // Step5: Configure elements for Image
-        MainImage1.setAttribute("src", "./Images/webImg.jpg");
+        MainImage1.setAttribute("src", "images/webImg.png");
         MainImage1.setAttribute("id", "MainImage1");
-        MainImage2.setAttribute("src", "./Images/net.jpg");
+        MainImage2.setAttribute("src", "images/net.png");
         MainImage2.setAttribute("id", "MainImage2");
-        MainImage3.setAttribute("src", "./Images/database2.jpg");
+        MainImage3.setAttribute("src", ".mages/database.png");
         MainImage3.setAttribute("id", "MainImage3"); 
 
         // Step6: Insert all the elements to MainContent using appendChild
@@ -212,7 +208,6 @@
     function DisplayAboutPage()
     {
         // Step1: Get an entry point
-        console.log("About Page");
         let MainContent = document.getElementsByTagName("main")[0];
         let DocumentBody = document.body;
 
@@ -247,9 +242,9 @@
         MainParagraph5.textContent += ("  Computer Programming and Analysis");
 
         // Step5: Configure elements for Image
-        MainImage4.setAttribute("src", "./Images/sonadi.jpeg");
+        MainImage4.setAttribute("src", "images/sonadi.png");
         MainImage4.setAttribute("id", "MainImage4");
-        MainImage5.setAttribute("src", "./Images/devanshi.jpeg");
+        MainImage5.setAttribute("src", "images/devanshi.png");
         MainImage5.setAttribute("id", "MainImage5");
 
         // Step6: Configure elements for Link
@@ -277,8 +272,6 @@
     */
     function DisplayContactPage()
     {
-        console.log("Contact Page");
-
         // Create element 
         let submit = document.getElementById("submitButton");
         submit.addEventListener("click", function(){
@@ -294,8 +287,6 @@
     // named function option
     function Start()
     {
-        console.log("App Started!");
-
         // Using the title of the document call the above created functions
         switch(document.title)
         {
