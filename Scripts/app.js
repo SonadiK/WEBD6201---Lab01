@@ -43,7 +43,7 @@
     HRList.appendChild(HRLink)
     //get an entry point(s) reference
     let list = document.getElementById("myList");
-    list.insertBefore(HRList, list.childNodes[8]);
+    list.insertBefore(HRList, list.childNodes[11]);
 
     /**
     * Function to display the content in home page.
