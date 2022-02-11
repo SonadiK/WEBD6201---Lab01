@@ -185,7 +185,7 @@
         MainImage1.setAttribute("id", "MainImage1");
         MainImage2.setAttribute("src", "images/net.png");
         MainImage2.setAttribute("id", "MainImage2");
-        MainImage3.setAttribute("src", ".mages/database.png");
+        MainImage3.setAttribute("src", "images/database.png");
         MainImage3.setAttribute("id", "MainImage3"); 
 
         // Step6: Insert all the elements to MainContent using appendChild
