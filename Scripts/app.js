@@ -16,6 +16,14 @@
 (function()
 {
     /**
+     * Change the Products link in the Navbar to Projects
+     */
+    //get an entry point(s) reference 
+    let Links = document.getElementsByClassName("nav-link");
+    // Add / Insert the new element
+    Links[1].innerHTML = "<i class ='fa-solid fa-table-cells-large'> </i> Projects";
+
+    /**
      * Function to display the content in home page.
      */
     function DisplayHomePage()
