@@ -251,7 +251,7 @@
         MainLink1.setAttribute("href", "./Resume/SonadiResume.docx");
         MainLink1.setAttribute("id", "MainLink1");
         MainLink1.textContent = ("Sonadi's Resume");
-        MainLink2.setAttribute("href", "./Resume/SonadiResume.docx");
+        MainLink2.setAttribute("href", "./Resume/DevanshiResume.docx");
         MainLink2.setAttribute("id", "MainLink2");
         MainLink2.textContent = ("Devanshi's Resume");
 
