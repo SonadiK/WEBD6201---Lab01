@@ -16,16 +16,16 @@
 (function()
 {
     /**
-     * Change the Products link in the Navbar to Projects
-     */
+    * Change the Products link in the Navbar to Projects
+    */
     //get an entry point(s) reference 
     let Links = document.getElementsByClassName("nav-link");
     // Add / Insert the new element
     Links[1].innerHTML = "<i class ='fa-solid fa-table-cells-large'> </i> Projects";
 
     /**
-     * Add another link to Navbar between About Us link and Contact Us link.
-     */ 
+    * Add another link to Navbar between About Us link and Contact Us link.
+    */ 
     // create an element(s) to insert
     let HRList = document.createElement("li");
     let HRLink = document.createElement("a");
@@ -46,8 +46,8 @@
     list.insertBefore(HRList, list.childNodes[8]);
 
     /**
-     * Function to display the content in home page.
-     */
+    * Function to display the content in home page.
+    */
     function DisplayHomePage()
     {
         console.log("Home Page");
@@ -79,8 +79,8 @@
     }
 
     /**
-     * Function to display the content in products page.
-     */
+    * Function to display the content in products page. The projects we did will be displayed in this page.
+    */
     function DisplayProductsPage()
     {
         console.log("Products Page");
@@ -139,9 +139,9 @@
     }
 
     /**
-     * The DisplayServicesPage() function loads the Services pages which consists of text and Images.
-     * It gives description about what different types of services we are providing.
-     */
+    * The DisplayServicesPage() function loads the Services pages which consists of text and Images.
+    * It gives description about what different types of services we are providing.
+    */
     function DisplayServicesPage()
     {
         // Step1: Get an entry point
@@ -206,9 +206,9 @@
     }
 
     /**
-     * This DisplayAboutPage() function loads the About Us page.
-     * It gives information about the us, which includes our name, qualification, image and resume link.
-     */
+    * This DisplayAboutPage() function loads the About Us page.
+    * It gives information about the us, which includes our name, qualification, image and resume link.
+    */
     function DisplayAboutPage()
     {
         // Step1: Get an entry point
@@ -224,7 +224,8 @@
         let MainParagraph5 = document.createElement("p");
         let MainImage4 = document.createElement("img");
         let MainImage5 = document.createElement("img");
-        let MainLink = document.createElement("a");
+        let MainLink1 = document.createElement("a");
+        let MainLink2 = document.createElement("a");
 
         // Step3: Configure elements for heading
         MainHeading5.setAttribute("id", "MainHeading1"); 
@@ -240,10 +241,10 @@
         // Step4: Configure elements for Paragraph
         MainParagraph4.setAttribute("id", "MainParagraph1");
         MainParagraph4.textContent = ("2nd Year Student");
-        MainParagraph4.textContent += ("Computer Programming and Analysis");
+        MainParagraph4.textContent += ("  Computer Programming and Analysis");
         MainParagraph5.setAttribute("id", "MainParagraph2");
         MainParagraph5.textContent = ("2nd Year Student");
-        MainParagraph5.textContent += ("Computer Programming and Analysis");
+        MainParagraph5.textContent += ("  Computer Programming and Analysis");
 
         // Step5: Configure elements for Image
         MainImage4.setAttribute("src", "./Images/sonadi.jpeg");
@@ -252,19 +253,42 @@
         MainImage5.setAttribute("id", "MainImage5");
 
         // Step6: Configure elements for Link
-        MainLink.setAttribute("href", "./Resume/Resume.docx");
-        MainLink.setAttribute("id", "MainLink");
-        MainLink.textContent = ("Resume");
+        MainLink1.setAttribute("href", "./Resume/SonadiResume.docx");
+        MainLink1.setAttribute("id", "MainLink1");
+        MainLink1.textContent = ("Sonadi's Resume");
+        MainLink2.setAttribute("href", "./Resume/SonadiResume.docx");
+        MainLink2.setAttribute("id", "MainLink2");
+        MainLink2.textContent = ("Devanshi's Resume");
 
         // Step6: Insert all the elements to MainContent using appendChild
         MainContent.appendChild(MainHeading5); 
         MainContent.appendChild(MainHeading7);
+        MainContent.appendChild(MainLink2);
         MainContent.appendChild(MainParagraph5);
         MainContent.appendChild(MainImage5);
         MainContent.appendChild(MainHeading6);
-        MainContent.appendChild(MainLink);
+        MainContent.appendChild(MainLink1);
         MainContent.appendChild(MainParagraph4);
-        MainContent.appendChild(MainImage4); 
+        MainContent.appendChild(MainImage4);
+    }
+
+    /**
+     * The DisplayContactPage() function is used to get all the contact information from the customer.
+    */
+    function DisplayContactPage()
+    {
+        console.log("Contact Page");
+
+        // Create element 
+        let submit = document.getElementById("submitButton");
+        submit.addEventListener("click", function(){
+            var fullNameInput = document.getElementById("fullName").value;
+            var contactInput = document.getElementById("contactNumber").value;
+            var emailInput = document.getElementById("emailAddress").value;
+            console.log("Full Name: " + fullNameInput);
+            console.log("Contact Number: " + contactInput);
+            console.log("Email Address: " + emailInput);
+        });
     }
     
     // named function option
@@ -289,7 +313,7 @@
                 break;
             case "Contact Us":
                 DisplayContactPage();
-                break;   
+                break;  
         }        
     }
 
