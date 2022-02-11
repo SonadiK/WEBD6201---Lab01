@@ -56,5 +56,38 @@ left: 51%;
 #PPImage1{
     height: 300px;
     width: 500px;
+}
 
+#MainImage1
+{
+    width: 450px;
+    height: 350px;
+    border: 1px solid;
+}
+
+#MainImage2
+{
+    width: 450px;
+    height: 350px;
+    border: 1px solid;
+}
+
+#MainImage3
+{
+    width: 450px;
+    height: 350px;
+    border: 1px solid;
+}
+
+#MainImage4
+{
+    width: 350px;
+    height: 550px;
+    border: 1px solid;
+}
+
+#MainImage5 {
+    width: 350px;
+    height: 550px;
+    border: 1px solid;
 }
