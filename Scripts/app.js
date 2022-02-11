@@ -158,7 +158,7 @@
         let MainImage3 = document.createElement("img");
         
         // Step3: Configure elements for heading
-        MainHeading1.setAttribute("id", "MainHeading1"); 
+        MainHeading1.setAttribute("id", "PPHeading1"); 
         MainHeading1.setAttribute("class", "mt-3");
         MainHeading1.textContent = "Our Services";
         MainHeading2.setAttribute("id", "MainHeading2");
@@ -223,7 +223,7 @@
         let MainLink2 = document.createElement("a");
 
         // Step3: Configure elements for heading
-        MainHeading5.setAttribute("id", "MainHeading1"); 
+        MainHeading5.setAttribute("id", "PPHeading1"); 
         MainHeading5.setAttribute("class", "mt-3");
         MainHeading5.textContent = "About Us";
         MainHeading6.setAttribute("id", "MainHeading2");
